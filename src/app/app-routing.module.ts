@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
+import { FormHomeComponent } from './forms/components/form-home.component';
+import {FORM_ROUTES} from './forms/form.routing';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'forms', component: FormHomeComponent },
+  FORM_ROUTES
 ];
 
 @NgModule({

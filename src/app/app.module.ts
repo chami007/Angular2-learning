@@ -6,11 +6,15 @@ import {DemoAppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { FormHomeComponent } from './forms/components/form-home.component';
+import { FormExample1Component } from './forms/components/form-example1/form-example1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FormHomeComponent,
+    FormExample1Component
   ],
   imports: [
     BrowserModule,
