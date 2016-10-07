@@ -1,0 +1,58 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+        <label for="example-text-input" 
+            class="col-xs-2 col-form-label">First Name</label>
+        <div class="col-xs-10">
+            <input class="form-control" type="text" 
+                formControlName="firstName">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-search-input" class="col-xs-2 col-form-label">Last Name</label>
+        <div class="col-xs-10">
+            <input class="form-control" type="text" formControlName="lastName">
+        </div>
+    </div>
+    <div formGroupName="account">
+        <div class="form-group row">
+            <label for="example-email-input" class="col-xs-2 col-form-label">Username</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="text" formControlName="username">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-url-input" 
+                class="col-xs-2 col-form-label">Password</label>
+            <div class="col-xs-10">
+                <input class="form-control" 
+                    type="text" formControlName="password">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-tel-input" class="col-xs-2 col-form-label">Confirm Password</label>
+            <div class="col-xs-10">
+                <input class="form-control" type="text" formControlName="confirm">
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-password-input" class="col-form-label">Would you like to receive a newsletter</label>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-10">
+            <input class="form-control" type="radio" value="yes" formControlName="newsletter"> Yes
+            <input class="form-control" type="radio" value="no" formControlName="newsletter"> No
+        </div>
+    </div>
+    <div class="form-group row">
+        <p>Form : {{form.value | json}}</p>
+        <p>Form status: {{form.status}}</p>
+        <p>Password Status : {{form.get('account.password').status }}</p>
+        <p>Account Status : {{form.get('account').errors | json }}</p>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-10">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</form>
