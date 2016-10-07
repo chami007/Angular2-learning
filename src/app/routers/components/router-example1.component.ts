@@ -24,4 +24,8 @@ export class RouterExample1Component implements OnInit {
     this.users.push({ id: 5, name: 'Ian', username: '007', avatar:'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAPnAAAAJDZjYjFmZDY1LTUyN2YtNGJjYS1iYTBmLWZkNjg0YzM4ZDM4Yw.jpg' });
   }
 
+  getUserDetail(user:User){
+    console.log(user);
+  }
+
 }

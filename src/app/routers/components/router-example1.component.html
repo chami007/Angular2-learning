@@ -1,6 +1,6 @@
 <div *ngIf="users">
   <div class="col-sm-4" *ngFor="let user of users">
     {{user.id}}
-    <img [src]="user.avatar" alt="profPic">
+    <img [src]="user.avatar" class="img-responsive img-circle" alt="profPic" (click)="getUserDetail(user)">
   </div>
 </div>
