@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FormHomeComponent } from './forms/components/form-home.component';
 import { FormExample1Component } from './forms/components/form-example1/form-example1.component';
-import { RouterExample1Component } from './routers/components/router-example1.component';
+import { RouterExample1Component } from './routers/example1/router-example1.component';
+import { RoutingExample1AboutComponent } from './routers/example1/routing-example1-about.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RouterExample1Component } from './routers/components/router-example1.co
     HomeComponent,
     FormHomeComponent,
     FormExample1Component,
-    RouterExample1Component
+    RouterExample1Component,
+    RoutingExample1AboutComponent
   ],
   imports: [
     BrowserModule,

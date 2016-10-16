@@ -4,7 +4,18 @@ import {User} from '../models/user';
 @Component({
   selector: 'fau-router-example1',
   templateUrl: './router-example1.component.html',
-  styles: []
+  styles: [`
+    .profile-card{
+      background:#f3f3f3;
+      border-radius: 4px;
+      padding: 30px;
+      text-align: center;
+    }
+    .profile-card img{
+      max-width: 50%;
+      margin : 15px auto;
+    }
+  `]
 })
 export class RouterExample1Component implements OnInit {
 

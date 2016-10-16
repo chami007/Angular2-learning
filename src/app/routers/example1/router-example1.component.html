@@ -1,0 +1,9 @@
+<div *ngIf="users">
+  <div class="col-sm-4" *ngFor="let user of users">
+    <div class="profile-card" [routerLink]="['about', user.username]">
+      {{user.id}}
+      <img [src]="user.avatar" class="img-responsive img-circle" alt="profPic" (click)="getUserDetail(user)">
+      <p class="h3">{{user.name}}</p>
+    </div>
+  </div>
+</div>
