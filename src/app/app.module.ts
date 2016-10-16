@@ -11,6 +11,14 @@ import { FormHomeComponent } from './forms/components/form-home.component';
 import { FormExample1Component } from './forms/components/form-example1/form-example1.component';
 import { RouterExample1Component } from './routers/example1/router-example1.component';
 import { RoutingExample1AboutComponent } from './routers/example1/routing-example1-about.component';
+import { HeaderComponent } from './recipe-book/header.component';
+import { RecipeBookComponent } from './recipe-book/recipe-book.component';
+import { RecipesComponent } from './recipe-book/recipes/recipes.component';
+import { RecipeListComponent } from './recipe-book/recipes/recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './recipe-book/recipes/recipe-list/recipe-item.component';
+import { RecipeDetailComponent } from './recipe-book/recipes/recipe-detail/recipe-detail.component';
+import { ShoppingListComponent } from './recipe-book/shopping-list/shopping-list.component';
+import { ShoppingListAddComponent } from './recipe-book/shopping-list/shopping-list-add.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +27,15 @@ import { RoutingExample1AboutComponent } from './routers/example1/routing-exampl
     FormHomeComponent,
     FormExample1Component,
     RouterExample1Component,
-    RoutingExample1AboutComponent
+    RoutingExample1AboutComponent,
+    HeaderComponent,
+    RecipeBookComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeDetailComponent,
+    ShoppingListComponent,
+    ShoppingListAddComponent
   ],
   imports: [
     BrowserModule,

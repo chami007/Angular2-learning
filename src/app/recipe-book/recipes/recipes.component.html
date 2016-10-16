@@ -1,0 +1,10 @@
+<div class="row">
+	<div class="col-md-5">
+		<fau-recipe-list (recipeSelected)="selectedRecipe = $event">			
+		</fau-recipe-list>
+	</div>
+	<div class="col-md-7">
+		<fau-recipe-detail *ngIf="selectedRecipe" [selectedRecipe]="selectedRecipe">			
+		</fau-recipe-detail>
+	</div>
+</div>
