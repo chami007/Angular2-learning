@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import {DemoAppRoutingModule} from './app-routing.module';
-import {SimpleNotificationsModule } from 'angular2-notifications';
+import { DemoAppRoutingModule } from './app-routing.module';
+import { SimpleNotificationsModule } from 'angular2-notifications';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -20,6 +20,7 @@ import { RecipeDetailComponent } from './recipe-book/recipes/recipe-detail/recip
 import { ShoppingListComponent } from './recipe-book/shopping-list/shopping-list.component';
 import { ShoppingListAddComponent } from './recipe-book/shopping-list/shopping-list-add.component';
 import { StdDropdownDirective } from './recipe-book/directives/std-dropdown.directive';
+import { ShoppingListService } from './recipe-book/shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { StdDropdownDirective } from './recipe-book/directives/std-dropdown.dire
     DemoAppRoutingModule,
     SimpleNotificationsModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
