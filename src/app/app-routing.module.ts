@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'forms', component: FormHomeComponent },
+  { path: 'recipe-book', pathMatch:'full', redirectTo: 'recipe-book/recipes' },
   FORM_ROUTES,
   ROUTE_ROUTES,
   RECIPE_BOOK_ROUTES,
