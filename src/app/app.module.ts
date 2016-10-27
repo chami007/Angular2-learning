@@ -21,6 +21,8 @@ import { ShoppingListComponent } from './recipe-book/shopping-list/shopping-list
 import { ShoppingListAddComponent } from './recipe-book/shopping-list/shopping-list-add.component';
 import { StdDropdownDirective } from './recipe-book/directives/std-dropdown.directive';
 import { ShoppingListService } from './recipe-book/shopping-list/shopping-list.service';
+import { DropdownCustomDirectiveComponent } from './directives/dropdown-custom-directive/dropdown-custom-directive.component';
+import { CustomDirectiveTestComponent } from './directives/custom-directive-test.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ShoppingListService } from './recipe-book/shopping-list/shopping-list.s
     RecipeDetailComponent,
     ShoppingListComponent,
     ShoppingListAddComponent,
-    StdDropdownDirective
+    StdDropdownDirective,
+    DropdownCustomDirectiveComponent,
+    CustomDirectiveTestComponent
   ],
   imports: [
     BrowserModule,

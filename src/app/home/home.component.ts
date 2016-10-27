@@ -1,26 +1,48 @@
-import { Component, OnInit } from '@angular/core';
-import {NotificationsService} from 'angular2-notifications';
+import { Component, OnInit, OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit } from '@angular/core';
+import { NotificationsService } from 'angular2-notifications';
+import * as jQuery from 'jquery';
 
 @Component({
   selector: 'fau-home',
   templateUrl: './home.component.html',
   styles: []
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnChanges, DoCheck, AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit {
 
-  constructor(private pushService: NotificationsService) { }
+  constructor(private pushService: NotificationsService) { 
+    console.log('constructor');
+  }
 
   ngOnInit() {
+console.log('ngOnInit');
   }
 
-  public options = {
-    position: ["bottom", "right"],
-    timeOut: 2000,
-    lastOnBottom: true
+  ngOnChanges(){
+console.log('ngOnChanges');
   }
 
-  clickMe(){
-    this.pushService.success('My title', 'content here', this.options);
+  ngDoCheck(){
+console.log('ngDoCheck');
+  }
+
+  ngAfterContentChecked(){
+console.log('ngAfterContentChecked');
+  }
+
+  ngAfterContentInit(){
+console.log('ngAfterContentInit');
+  }
+
+  ngAfterViewChecked(){
+console.log('ngAfterViewChecked');
+  }
+
+  ngAfterViewInit(){
+console.log('ngAfterViewInit');
+  }
+
+  clickMe() {
+      console.log(window.location.href);
   }
 
 }

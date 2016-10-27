@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm" novalidate>
+	<div>
+		<div class="form-group">
+			<label for="username">UserName</label>
+			<input type="text" class="form-control" id="username" ngModel name="username" #username required>
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="text" class="form-control" id="email" ngModel name="email" #email required>
+		</div>
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input type="text" class="form-control" id="password" ngModel name="password" #password required>
+		</div>
+		<div class="form-group">
+			<fau-dropdown-custom-directive name="customDropdown" ngModel required [items]="items"></fau-dropdown-custom-directive>
+		</div>
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+  <h2>Valid : {{form.valid}}</h2>
+</form>
